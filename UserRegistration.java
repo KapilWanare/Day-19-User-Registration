@@ -7,7 +7,7 @@ public class UserRegistration {
         Scanner sc = new Scanner(System.in);
         //uc1
         Pattern pattern = Pattern.compile("^[A-Z][a-z]{2,}");
-        Matcher matcher = pattern.matcher("Sukanya");
+        Matcher matcher = pattern.matcher("Kapil");
         if (matcher.matches())
             System.out.println("valid firstname");
         else
@@ -15,7 +15,7 @@ public class UserRegistration {
 
         //uc2
         Pattern pattern1 = Pattern.compile("^[A-Z][a-z]{2,}");
-        Matcher matcher1 = pattern1.matcher("Naik");
+        Matcher matcher1 = pattern1.matcher("Wanare");
         if (matcher1.matches())
             System.out.println("valid lastname");
         else
@@ -76,41 +76,5 @@ public class UserRegistration {
             System.out.println("Invalid password_rule4");
 
 
-        //uc9
-        //  1. abc@yahoo.com,
-        //• 2. abc-100@yahoo.com,
-        //• 3. abc.100@yahoo.com
-        //• 2. abc111@abc.com,
-        //• 4. abc-100@abc.net,
-        //• 5. abc.100@abc.com.au
-        //• 6. abc@1.com,
-        //• 7. abc@gmail.com.com
-        //• 8. abc+100@gmail.com
-        String text = "Here are some sample email addresses:"+
-                "        //  1. abc@yahoo.com,\n" +
-                "        //• 2. abc-100@yahoo.com,\n" +
-                "        //• 3. abc.100@yahoo.com\n" +
-                "        //• 4. abc111@abc.com,\n" +
-                "        //• 5. abc-100@abc.net,\n" +
-                "        //• 6. abc.100@abc.com.au\n" +
-                "        //• 7. abc@1.com,\n" +
-                "        //• 8. abc@gmail.com.com\n" +
-                "        //• 9. abc+100@gmail.com";
-
-        // Define the regular expression to match email addresses
-        String emailPattern = "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}";
-
-        // Create a Pattern object from the regular expression
-        Pattern pattern8 = Pattern.compile(emailPattern);
-
-        // Use a Matcher object to find all occurrences of the pattern in the text
-        Matcher matcher8 = pattern8.matcher(text);
-
-        // Iterate over the matches and print each email address
-        System.out.println("Valid email are : ");
-        while (matcher8.find()) {
-            String email = matcher8.group();
-            System.out.println(email);
-        }
     }
 }
