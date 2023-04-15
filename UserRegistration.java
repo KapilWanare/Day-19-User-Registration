@@ -5,7 +5,7 @@ public class UserRegistration {
     public static void main(String[] args) {
         //uc1
         Pattern pattern = Pattern.compile("^[A-Z][a-z]{2,}");
-        Matcher matcher = pattern.matcher("Sukanya");
+        Matcher matcher = pattern.matcher("Kapil");
         if (matcher.matches())
             System.out.println("valid");
         else
