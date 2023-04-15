@@ -7,7 +7,7 @@ public class UserRegistration {
         Scanner sc = new Scanner(System.in);
         //uc1
         Pattern pattern = Pattern.compile("^[A-Z][a-z]{2,}");
-        Matcher matcher = pattern.matcher("Sukanya");
+        Matcher matcher = pattern.matcher("Kapil");
         if (matcher.matches())
             System.out.println("valid firstname");
         else
@@ -15,7 +15,7 @@ public class UserRegistration {
 
         //uc2
         Pattern pattern1 = Pattern.compile("^[A-Z][a-z]{2,}");
-        Matcher matcher1 = pattern1.matcher("Naik");
+        Matcher matcher1 = pattern1.matcher("Wanare");
         if (matcher1.matches())
             System.out.println("valid lastname");
         else
